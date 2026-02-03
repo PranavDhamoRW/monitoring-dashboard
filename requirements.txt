@@ -1,3 +1,6 @@
+# === Core Cloud Provider SDKs ===
+
+# Azure SDK - For Azure resource management and monitoring
 azure-common==1.1.28
 azure-core==1.37.0
 azure-identity==1.25.1
@@ -10,27 +13,37 @@ azure-mgmt-rdbms==10.1.1
 azure-mgmt-resource==24.0.0
 azure-mgmt-storage==24.0.0
 azure-mgmt-web==10.1.0
+
+# AWS SDK - For AWS resource management and cost explorer
 boto3==1.42.21
 botocore==1.42.21
+
+# === HTTP & API Communication ===
+requests==2.32.5
+requests-oauthlib==2.0.0
+urllib3==2.6.2
 certifi==2026.1.4
-cffi==2.0.0
 charset-normalizer==3.4.4
-cryptography==46.0.3
 idna==3.11
-isodate==0.7.2
-jmespath==1.0.1
+
+# === Database ===
+psycopg2-binary==2.9.11
+
+# === Authentication & Security ===
+cryptography==46.0.3
 msal==1.34.0
 msal-extensions==1.3.1
 msrest==0.7.1
 oauthlib==3.3.1
-psycopg2-binary==2.9.11
-pycparser==2.23
 PyJWT==2.10.1
+cffi==2.0.0
+pycparser==2.23
+
+# === Utilities ===
+python-dotenv==1.2.1  # For loading .env files
 python-dateutil==2.9.0.post0
-python-dotenv==1.2.1
-requests==2.32.5
-requests-oauthlib==2.0.0
+isodate==0.7.2
+jmespath==1.0.1  # For parsing AWS responses
 s3transfer==0.16.0
 six==1.17.0
 typing_extensions==4.15.0
-urllib3==2.6.2
