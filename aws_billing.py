@@ -124,10 +124,10 @@ def fetch_daily_costs():
             },
             Granularity='DAILY',
             Metrics=['UnblendedCost'],
+            # To this:
             GroupBy=[
-                {'Type': 'DIMENSION', 'Key': 'SERVICE'},
-                {'Type': 'DIMENSION', 'Key': 'RESOURCE_ID'}
-            ]
+    {'Type': 'DIMENSION', 'Key': 'SERVICE'}
+]
         )
         
     except ClientError as e:
